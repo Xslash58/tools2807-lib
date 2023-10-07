@@ -4,7 +4,21 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>tools2807</RootNamespace>
     <Nullable>enable</Nullable>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Xslash58/tools2807-lib</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Xslash58/tools2807-lib</PackageProjectUrl>
+    <Authors>Xslash</Authors>
+    <Description>An unofficial tools.2807.eu API library for C#</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
