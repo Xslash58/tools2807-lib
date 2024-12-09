@@ -10,6 +10,7 @@
     <PackageProjectUrl>https://github.com/Xslash58/tools2807-lib</PackageProjectUrl>
     <Authors>Xslash</Authors>
     <Description>An unofficial tools.2807.eu API library for C#</Description>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 

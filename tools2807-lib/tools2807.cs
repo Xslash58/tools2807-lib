@@ -8,12 +8,16 @@ namespace tools2807
 {
     public class tools2807
     {
+        private string _useragent = $"tools2807-lib/1.0.1";
         public const string _baseurl = "https://tools.2807.eu/api";
         private HttpClient _client;
 
-        public tools2807()
+        public tools2807(string? UserAgent = null)
         {
+            if(UserAgent != null) _useragent = UserAgent;
+
             _client = new HttpClient();
+            _client.DefaultRequestHeaders.UserAgent.ParseAdd(_useragent);
         }
 
         public async Task<FollowUser[]?> GetFollows(string username)
